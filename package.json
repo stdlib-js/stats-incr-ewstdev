@@ -39,6 +39,7 @@
   "dependencies": {
     "@stdlib/assert-is-nonnegative-number": "^0.0.x",
     "@stdlib/math-base-special-sqrt": "^0.0.x",
+    "@stdlib/string-format": "^0.0.x",
     "@stdlib/types": "^0.0.x"
   },
   "devDependencies": {
