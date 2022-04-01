@@ -1,0 +1,4 @@
+// Copyright (c) 2022 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
+/// <reference types="./index.d.ts" />
+import e from"https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-nonnegative-number@esm/index.mjs";import n from"https://cdn.jsdelivr.net/gh/stdlib-js/string-format@esm/index.mjs";import r from"https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-sqrt@esm/index.mjs";var t=e.isPrimitive,i=n,s=r;var a=function(e){var n,r,a,o,m,d;if(!t(e))throw new TypeError(i("invalid argument. Must provide a nonnegative number. Value: `%s`.",e));if(e<0||e>1)throw new RangeError(i("invalid argument. Must provide a nonnegative number on the interval [0,1]. Value: `%f`.",e));return d=1-e,function(t){if(0===arguments.length)return void 0===a?null:a;void 0===a?(m=t,r=0):(m+=n=e*(o=t-m),r=d*(r+o*n));return a=s(r)}};export{a as default};
+//# sourceMappingURL=index.mjs.map
