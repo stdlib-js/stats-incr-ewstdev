@@ -72,7 +72,9 @@ If no recognized module system is present, access bundle contents via the global
 ```html
 <script type="text/javascript">
 (function () {
+(function () {
     window.increwstdev;
+})();
 })();
 </script>
 ```
@@ -136,6 +138,7 @@ s = accumulator();
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-ewstdev@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
+(function () {
 
 var accumulator;
 var v;
@@ -151,6 +154,7 @@ for ( i = 0; i < 100; i++ ) {
 }
 console.log( accumulator() );
 
+})();
 })();
 </script>
 </body>
@@ -248,15 +252,15 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [moving-average]: https://en.wikipedia.org/wiki/Moving_average
 
-[@stdlib/stats/incr/ewmean]: https://github.com/stdlib-js/stats-incr-ewmean/tree/umd
+[@stdlib/stats/incr/ewmean]: https://github.com/stdlib-js/stats-incr-ewmean/tree/umd/tree/umd
 
 <!-- <related-links> -->
 
-[@stdlib/stats/incr/ewvariance]: https://github.com/stdlib-js/stats-incr-ewvariance/tree/umd
+[@stdlib/stats/incr/ewvariance]: https://github.com/stdlib-js/stats-incr-ewvariance/tree/umd/tree/umd
 
-[@stdlib/stats/incr/mstdev]: https://github.com/stdlib-js/stats-incr-mstdev/tree/umd
+[@stdlib/stats/incr/mstdev]: https://github.com/stdlib-js/stats-incr-mstdev/tree/umd/tree/umd
 
-[@stdlib/stats/incr/stdev]: https://github.com/stdlib-js/stats-incr-stdev/tree/umd
+[@stdlib/stats/incr/stdev]: https://github.com/stdlib-js/stats-incr-stdev/tree/umd/tree/umd
 
 <!-- </related-links> -->
 
