@@ -30,10 +30,14 @@ An [exponentially weighted variance][moving-average] can be defined recursively 
 
 <!-- <equation class="equation" label="eq:exponentially_weighted_variance" align="center" raw="S_n = \begin{cases} 0 & \textrm{if}\ n = 0 \\ (1 - \alpha) (S_{n-1} + \alpha(x_n - \mu_{n-1})^2) & \textrm{if}\ n > 0 \end{cases}" alt="Recursive definition for computing an exponentially weighted variance."> -->
 
-<div class="equation" align="center" data-raw-text="S_n = \begin{cases} 0 &amp; \textrm{if}\ n = 0 \\ (1 - \alpha) (S_{n-1} + \alpha(x_n - \mu_{n-1})^2) &amp; \textrm{if}\ n &gt; 0 \end{cases}" data-equation="eq:exponentially_weighted_variance">
+```math
+S_n = \begin{cases} 0 & \textrm{if}\ n = 0 \\ (1 - \alpha) (S_{n-1} + \alpha(x_n - \mu_{n-1})^2) & \textrm{if}\ n > 0 \end{cases}
+```
+
+<!-- <div class="equation" align="center" data-raw-text="S_n = \begin{cases} 0 &amp; \textrm{if}\ n = 0 \\ (1 - \alpha) (S_{n-1} + \alpha(x_n - \mu_{n-1})^2) &amp; \textrm{if}\ n &gt; 0 \end{cases}" data-equation="eq:exponentially_weighted_variance">
     <img src="https://cdn.jsdelivr.net/gh/stdlib-js/stdlib@b6bfc5be3086b5ddfeed2311afee7c9201fbdcbb/lib/node_modules/@stdlib/stats/incr/ewstdev/docs/img/equation_exponentially_weighted_variance.svg" alt="Recursive definition for computing an exponentially weighted variance.">
     <br>
-</div>
+</div> -->
 
 <!-- </equation> -->
 
@@ -43,38 +47,30 @@ where `μ` is the [exponentially weighted mean][@stdlib/stats/incr/ewmean]. The 
 
 <!-- /.intro -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/stats-incr-ewstdev
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-increwstdev = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-ewstdev@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var increwstdev = require( 'path/to/vendor/umd/stats-incr-ewstdev/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-ewstdev@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.increwstdev;
-})();
-</script>
+var increwstdev = require( '@stdlib/stats-incr-ewstdev' );
 ```
 
 #### increwstdev( alpha )
@@ -128,14 +124,9 @@ s = accumulator();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-ewstdev@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var increwstdev = require( '@stdlib/stats-incr-ewstdev' );
 
 var accumulator;
 var v;
@@ -150,11 +141,6 @@ for ( i = 0; i < 100; i++ ) {
     accumulator( v );
 }
 console.log( accumulator() );
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -230,7 +216,7 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -248,15 +234,15 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [moving-average]: https://en.wikipedia.org/wiki/Moving_average
 
-[@stdlib/stats/incr/ewmean]: https://github.com/stdlib-js/stats-incr-ewmean/tree/umd
+[@stdlib/stats/incr/ewmean]: https://github.com/stdlib-js/stats-incr-ewmean
 
 <!-- <related-links> -->
 
-[@stdlib/stats/incr/ewvariance]: https://github.com/stdlib-js/stats-incr-ewvariance/tree/umd
+[@stdlib/stats/incr/ewvariance]: https://github.com/stdlib-js/stats-incr-ewvariance
 
-[@stdlib/stats/incr/mstdev]: https://github.com/stdlib-js/stats-incr-mstdev/tree/umd
+[@stdlib/stats/incr/mstdev]: https://github.com/stdlib-js/stats-incr-mstdev
 
-[@stdlib/stats/incr/stdev]: https://github.com/stdlib-js/stats-incr-stdev/tree/umd
+[@stdlib/stats/incr/stdev]: https://github.com/stdlib-js/stats-incr-stdev
 
 <!-- </related-links> -->
 
