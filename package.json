@@ -37,9 +37,9 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/assert-is-nonnegative-number": "^0.1.0",
+    "@stdlib/assert-is-nonnegative-number": "^0.1.1",
     "@stdlib/math-base-special-sqrt": "^0.1.0",
-    "@stdlib/string-format": "^0.1.0",
+    "@stdlib/string-format": "^0.1.1",
     "@stdlib/types": "^0.1.0"
   },
   "devDependencies": {
