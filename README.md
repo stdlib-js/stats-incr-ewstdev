@@ -65,7 +65,7 @@ where `μ` is the [exponentially weighted mean][@stdlib/stats/incr/ewmean]. The 
 ## Usage
 
 ```javascript
-import increwstdev from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-ewstdev@deno/mod.js';
+import increwstdev from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-ewstdev@v0.1.1-deno/mod.js';
 ```
 
 #### increwstdev( alpha )
@@ -121,7 +121,7 @@ s = accumulator();
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import increwstdev from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-ewstdev@deno/mod.js';
+import increwstdev from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-ewstdev@v0.1.1-deno/mod.js';
 
 var accumulator;
 var v;
