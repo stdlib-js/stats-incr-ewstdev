@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-08-18)
+## Unreleased (2025-08-20)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`60c82d7`](https://github.com/stdlib-js/stdlib/commit/60c82d7956372df2c50a05cab73205aa85198aa5) - **docs:** fix example code _(by Philipp Burckhardt)_
 -   [`07f7c05`](https://github.com/stdlib-js/stdlib/commit/07f7c0522c73e6ad9505e1d45035ae439344200d) - **test:** use standardized assertion messages and fix lint errors _(by Philipp Burckhardt)_
 -   [`842892d`](https://github.com/stdlib-js/stdlib/commit/842892db70da69098d8fb271ea19ae45c09a8a0e) - **test:** use .strictEqual() instead of .equal() and fix lint errors _(by Philipp Burckhardt)_
 
