@@ -39,14 +39,14 @@
   "dependencies": {
     "@stdlib/assert-is-nonnegative-number": "^0.2.2",
     "@stdlib/math-base-special-sqrt": "^0.2.2",
-    "@stdlib/string-format": "^0.2.2",
+    "@stdlib/string-format": "^0.2.3",
     "@stdlib/types": "^0.4.3",
     "@stdlib/error-tools-fmtprodmsg": "^0.2.2"
   },
   "devDependencies": {
     "@stdlib/array-base-zeros": "^0.2.2",
     "@stdlib/math-base-special-pow": "^0.3.0",
-    "@stdlib/random-base-randu": "^0.2.1",
+    "@stdlib/random-base-randu": "^0.2.2",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
